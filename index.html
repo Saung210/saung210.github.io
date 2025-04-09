@@ -2,136 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saung Hnin Phyu | Data Scientist</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    :root {
+      --primary-color: #000;
+      --secondary-color: #666;
+      --accent-color: #0077b6;
+      --bg-color: #fff;
+    }
+
+    * {
       margin: 0;
-      scroll-behavior: smooth;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--primary-color);
+      line-height: 1.6;
+    }
+
     header {
-      background: #2c3e50;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    nav {
-      background: #34495e;
-      padding: 10px 0;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       position: sticky;
       top: 0;
-      z-index: 999;
+      background: var(--bg-color);
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
       text-align: center;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+
+    .hero {
+      padding: 80px 20px;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid var(--primary-color);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: var(--secondary-color);
+      max-width: 600px;
       margin: auto;
     }
-    .skills span {
-      display: inline-block;
-      background: #ecf0f1;
-      margin: 5px;
-      padding: 8px 12px;
-      border-radius: 20px;
+
+    .social-links {
+      margin-top: 20px;
     }
+
+    .social-links a {
+      margin: 0 10px;
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      margin-top: 80px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: left;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .skills div, .projects div {
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .skills div:hover, .projects div:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-color);
+    }
+
     footer {
-      background: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 20px;
+      margin-top: 50px;
+      border-top: 1px solid #eee;
+      color: var(--secondary-color);
+      font-size: 0.9rem;
     }
-    .profile-img {
-      display: block;
-      margin: 20px auto;
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    /* Scroll indicator */
+    .scroll-down {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: var(--secondary-color);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(5px); }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Saung Hnin Phyu</h1>
-    <p>Junior Data Scientist</p>
+    <div><strong>Your Name</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container hero">
+    <img src="your-profile.jpg" alt="Your profile picture" />
+    <h1>Hello, I'm Your Name</h1>
+    <p>A short and sweet intro about you. Mention your specialty or goal in one line.</p>
+    <div class="social-links">
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="mailto:your@email.com">Email</a>
+    </div>
+    <div class="scroll-down">↓ Scroll down</div>
+  </div>
 
-  <section id="about">
+  <div class="container" id="about">
     <h2>About Me</h2>
-    <img src="images/profile.jpg" alt="Saung Hnin Phyu" class="profile-img" />
-    <p>
-      Highly motivated and detail-oriented Data Scientist with a strong foundation in AI,
-      machine learning, and data science. Committed to collaborative and impactful work
-      that delivers optimal engineering results.
-    </p>
-  </section>
+    <p>Write a short paragraph about who you are, what you do, and what drives you. Keep it natural and personal.</p>
+  </div>
 
-  <section id="skills">
+  <div class="container" id="skills">
     <h2>Skills</h2>
     <div class="skills">
-      <span>Python</span><span>SQL</span><span>R</span><span>C</span><span>C#</span>
-      <span>TensorFlow</span><span>PyTorch</span><span>Pandas</span><span>NumPy</span>
-      <span>Seaborn</span><span>Linux</span><span>Microsoft Office</span>
+      <div>HTML & CSS</div>
+      <div>JavaScript</div>
+      <div>React</div>
+      <div>Python</div>
+      <div>UI/UX Design</div>
     </div>
-  </section>
+  </div>
 
-  <section id="projects">
+  <div class="container" id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>Myanmar Trip Advisory Chatbot</li>
-      <li>Credit Card Fraud Detection</li>
-      <li>Danish - English Machine Translation Model</li>
-      <li>Shopping List Application</li>
-      <li>Smart Parking System</li>
-      <li>TraveLink Mobile Application</li>
-      <li>Automated Cannabis Planting System</li>
-    </ul>
-  </section>
+    <div class="projects">
+      <div>
+        <strong>Project One</strong>
+        <p>Short description of your project. Highlight your role and achievement.</p>
+      </div>
+      <div>
+        <strong>Project Two</strong>
+        <p>Short description of your project. Highlight your role and achievement.</p>
+      </div>
+    </div>
+  </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Data Scientist</strong> - Listening247, UK (Feb 2025 - Present)</li>
-      <li><strong>Data Scientist Intern</strong> - Listening247 (Jul 2024 - Jan 2025)</li>
-      <li><strong>ML Engineer Intern</strong> - Vast Hive, Denmark (May 2024 - Oct 2024)</li>
-      <li><strong>Teaching Assistant</strong> - KMITL (Jul 2023 - Apr 2024)</li>
-      <li><strong>PR Member</strong> - KMITL (Aug 2022 - Jun 2023)</li>
-      <li><strong>Game Developer Intern</strong> - Tokai University, Japan (May - Jul 2023)</li>
-      <li><strong>Curriculum Developer</strong> - Thate Pan Hub (Feb - Dec 2022)</li>
-    </ul>
-  </section>
-
-  <section id="contact">
+  <div class="container" id="contact">
     <h2>Contact</h2>
-    <p>Email: saunghninphyu7210@gmail.com</p>
-    <p>Phone: (+66) 097 958 4521</p>
-    <p>Location: Bangkok, Thailand</p>
-    <p>
-      <a href="https://www.linkedin.com/in/saunghninphyu" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/SaungHninPhyu" target="_blank">GitHub</a>
-    </p>
-  </section>
+    <p>I'm currently open to opportunities! Feel free to reach out via email or connect with me on social media.</p>
+    <div class="social-links">
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="mailto:your@email.com">Email</a>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Saung Hnin Phyu. All rights reserved.</p>
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
+
 </body>
 </html>

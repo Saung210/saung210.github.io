@@ -575,13 +575,13 @@ img {
 /*==================== QUALIFICATION ====================*/
 
 
-/*==================== SERVICES ====================*/
-.services__container {
+/*==================== EXPERIENCES ====================*/
+.experiences__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.services__content {
+.experiences__content {
   position: relative;
   background-color: var(--container-color);
   padding: 3.5rem .5rem 1.25rem 1.5rem;
@@ -590,33 +590,33 @@ img {
   transition: .3s;
 }
 
-.services:hover {
+.experiences:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
 }
 
-.services__icon {
+.experiences__icon {
   display: block;
   font-size: 1.5rem;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
 }
 
-.services__title {
+.experiences__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
 }
 
-.services__button {
+.experiences__button {
   cursor: pointer;
   font-size: var(--small-font-size);
 }
 
-.services__button:hover .button__icon {
+.experiences__button:hover .button__icon {
   transform: translateX(.25rem);
 }
 
-.services__modal {
+.experiences__modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -633,28 +633,28 @@ img {
   transition: .3s;
 }
 
-.services__modal-content {
+.experiences__modal-content {
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: .5rem;
 }
 
-.services__modal-services {
+.experiences__modal-experiences {
   row-gap: 1rem;
 }
 
-.service__modal-service {
+.experience__modal-experience {
   display: flex;
 }
 
-.services__modal-title {
+.experiences__modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
 }
 
-.services__modal-close {
+.experiences__modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -663,7 +663,7 @@ img {
   cursor: pointer;
 }
 
-.services__modal-icon {
+.experiences__modal-icon {
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
@@ -674,31 +674,31 @@ img {
   visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
-.portfolio__container {
+/*==================== PROJECT ====================*/
+.project__container {
   overflow: initial;
 }
 
-.portfolio__content {
+.project__content {
   padding: 0 1.5rem;
 }
 
-.portfolio__img {
+.project__img {
   width: 265px;
   border-radius: .5rem;
   justify-self: center;
 }
 
-.portfolio__title {
+.project__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
 }
 
-.portfolio__description {
+.project__description {
   margin-bottom: var(--mb-0-75);
 }
 
-.portfolio__button:hover .button__icon {
+.project__button:hover .button__icon {
   transform: translateX(.25rem);
 }
 
@@ -707,7 +707,7 @@ img {
   content: '';
 }
 
-.swiper-portfolio-icon {
+.swiper-project-icon {
   font-size: 2rem;
   color: var(--first-color);
 }
@@ -980,16 +980,16 @@ footer .footer__social a:hover {
     font-size: var(--normal-font-size);
   }
 
-  .services__container {
+  .experiences__container {
     grid-template-columns: max-content;
     justify-content: center;
   }
 
-  .services__content {
+  .experiences__content {
     padding-right: 3.5rem;
   }
 
-  .services__modal {
+  .experiences__modal {
     padding: 0 .5rem;
   }
 
@@ -1035,7 +1035,7 @@ footer .footer__social a:hover {
 
   .about__container,
   .skills__container,
-  .portfolio__content,
+  .project__content,
   .project__container,
   .contact__container,
   .footer__container {
@@ -1137,20 +1137,20 @@ footer .footer__social a:hover {
     justify-content: initial;
   }
 
-  .services__container {
+  .experiences__container {
     grid-template-columns: repeat(3, 218px);
     justify-content: center;
   }
 
-  .services__icon {
+  .experiences__icon {
     font-size: 2rem;
   }
 
-  .services__content {
+  .experiences__content {
     padding: 6rem 0 2rem 2.5rem;
   }
 
-  .services__modal-content {
+  .experiences__modal-content {
     width: 450px;
   }
 
@@ -1158,11 +1158,11 @@ footer .footer__social a:hover {
     visibility: hidden;
   }
 
-  .portfolio__img {
+  .project__img {
     width: 320px;
   }
 
-  .portfolio__content {
+  .project__content {
     align-items: center;
   }
 
@@ -1227,7 +1227,7 @@ footer .footer__social a:hover {
     transform: translateX(-6rem);
   }
 
-  .services__container {
+  .experiences__container {
     grid-template-columns: repeat(3, 238px);
   }
 
@@ -1235,11 +1235,11 @@ footer .footer__social a:hover {
     visibility: visible;
   }
 
-  .portfolio__content {
+  .project__content {
     column-gap: 5rem;
   }
 
-  .swiper-portfolio-icon {
+  .swiper-project-icon {
     font-size: 3.5rem;
   }
 

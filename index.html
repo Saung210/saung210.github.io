@@ -1,110 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saung Hnin Phyu | Data Scientist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: white;
-      margin: 0;
-      padding: 40px;
-      color: #333;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="I'm Saung,and this is my personal project website..">
+    <meta name="keywords" content="Saung, Saung Hnin Phyu, saung ">
 
-    .profile-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      max-width: 1000px;
-      margin: auto;
-      gap: 30px;
-    }
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
-    .profile-details {
-      max-width: 550px;
-    }
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
 
-    .profile-details h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    .profile-details p {
-      font-size: 1.1rem;
-      margin: 5px 0;
-    }
+    <title>Saung Hnin Phyu</title>
 
-    .button-group {
-      margin-top: 25px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
+    <!--==================== Favicon ====================-->
+    <link rel="shortcut icon" href="/assets/img/favicon_edited.png" type="image/png">
 
-    .button-group a {
-      text-decoration: none;
-      background: #e0e0e0;
-      color: #333;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
+    <!--==================== Animate on scroll CDN ====================-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    .button-group a:hover {
-      background: #ccc;
-    }
-
-    .profile-photo {
-      flex-shrink: 0;
-    }
-
-    .profile-photo img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 3px solid #ddd;
-    }
-
-    @media (max-width: 768px) {
-      .profile-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .button-group {
-        justify-content: center;
-      }
-    }
-  </style>
 </head>
+
 <body>
+    
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Saung</a>
 
-  <div class="profile-section">
-    <div class="profile-details">
-      <h1>Saung Hnin Phyu</h1>
-      <p><strong>Data Scientist</strong></p>
-      <p>Bachelor of Engineering (Robotics and AI Engineering)</p>
-      <p>Academic Year: Aug 2021 - Apr 2025 (GPA 3.75/4)</p>
+            <div data-aos="fade-in" class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__items">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
 
-      <div class="button-group">
-        <a href="https://www.linkedin.com/in/saunghninphyu/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Saung210" target="_blank">GitHub</a>
-        <a href="mailto:saunghninphyu7210@gmail.com">Email</a>
-        <a href="https://drive.google.com/file/d/1AlH4frpd7PzeIbghDghKjvWU5_xUw9z-/view?usp=drive_link" target="_blank" download>Download CV</a>
-      </div>
-    </div>
+                    <li class="nav__items">
+                        <a href="#about" class="nav__link ">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
 
-    <div class="profile-photo">
-      <img src="images/profile.png" alt="Saung Hnin Phyu" />
-    </div>
-  </div>
+                    <li class="nav_items">
+                        <a href="#skills" class="nav__link ">
+                            <i class="uil uil-file nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#experiences" class="nav__link ">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Experiences
+                        </a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#project" class="nav__link ">
+                            <i class="uil uil-scenery nav__icon"></i> project
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#contact" class="nav__link ">
+                            <i class="uil uil-message nav__icon"></i> Contact me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!--Theme Change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div data-aos="fade-left" class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.instagram.com/mr1m0y._dev"
+                            target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://github.com/Saung210" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saunghninphyu/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                    </div>
+
+                    <div data-aos="fade-right" class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <image class="home__blob-img" x="12" y="18" href="assets/img/perfil.png" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home_title">Hi!<span class="wave">👋</span>, I'm Saung</h1>
+                        <h3 class="home__subtitle">
+                            and I'm <span class="auto-input"></span>
+                        </h3>
+                        <p class="home__description">
+                            Data Scientist | Aspiring Data Engineer | AI & NLP Enthusiast
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name"> Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle"> My Introduction</span>
+
+            <div data-aos="fade-left" class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img" />
+
+                <div class="about__data">
+                    <p class="about__description">
+                        Hi I'm Saung Hnin Phyu. 
+                        Fresh graduate in Bachelor of Robotics and AI Engineering, currently working as a Data Scientist at Listening247. 
+                        <br>
+                        Experienced in NLP, data annotation, and model development from international internships and university projects. 
+                        Proficient in Python, SQL, with a strong foundation in machine learning frameworks like TensorFlow and PyTorch. 
+                        Passionate about turning data into insights and excited to grow further in data engineering. 
+                        I enjoy working on real-world problems that combine technology, data, and creativity to make a meaningful impact.
+                    </p>
+
+                    <div class="about_info">
+                        <div>
+                            <span class="about__info-title">01+</span>
+                            <span class="about__info-name">Years <br />
+                                experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">20+</span>
+                            <span class="about__info-name">Completed <br />
+                                project</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/CV.pdf" class="button button--flex">
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div data-aos="fade-up" class="skills__container container grid">
+                <div>
+                    <!--==================== SKILL 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Programming & Tools</h1>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/python.png" class="skills__logo"
+                                            width="25px" alt=""> Python</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/sql.png" class="skills__logo"
+                                            width="20px" alt=""> SQL</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/C.png" class="skills__logo"
+                                            width="20px" alt=""> C</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/R.png" class="skills__logo"
+                                            width="20px" alt=""> R</h3>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/C#.png" class="skills__logo"
+                                            width="20px" alt=""> C#</h3>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/microsoft.png" class="skills__logo"
+                                            width="20px" alt=""> Microsoft Office Tools</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SKILL 2 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Data Science, Machine Learning & Operating Systems</h1>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/sci.png" class="skills__logo"
+                                            width="20px" alt=""> Pandas, Polars, Numpy, Seaborn</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/transformers.png" class="skills__logo"
+                                            width="20px" alt=""> Transformers, Tensorflow, Pytorch</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/os.png" class="skills__logo"
+                                            width="20px" alt=""> Ubuntu, Linux</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name"><img src="/assets/img/minitab.png" class="skills__logo"
+                                            width="20px" alt=""> Minitab</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!--==================== SKILL 3 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-swatchbook skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__titles">Soft Skills</h1>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                            <div class="skills__data">
+                                 <div class="skills__titles">
+                                   <h3 class="skills__name">Adaptability</h3>
+                                 </div>
+                            </div>
+                          <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Teamwork</h3>
+                            </div>
+                          </div>
+                          <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Time Management</h3>
+                            </div>
+                          </div>
+                          <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Leadership</h3>
+                            </div>
+                          </div>
+                          <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Effective Communication</h3>
+                            </div>
+                          </div>
+                          <div class="skills__data">
+                            <div class="skills__titles">
+                              <h3 class="skills__name">Critical Thinking</h3>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        </section>
+
+        <!--==================== Certificates ====================-->
+        <section class="certificate section">
+            <h2 class="section__title">My Certificates</h2>
+            <span class="section__subtitle">Scroll or slide here to see next>>></span>
+
+            <div data-aos="fade-up" class="project__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== Certificate 1 ====================-->
+                    <div class="project__content grid swiper-slide">
+                        <img src="/assets/img/supervised.jpg" alt="" class="project__img">
+
+                        <div class="project__data">
+                            <p>Supervised Machine Learning: Regression and Classification by DeepLearning.AI, Coursera</p>
+                            <a href="/assets/pdf/Mrinmoy_abstract_HTML.pdf"
+                                class="button button--flex button--small project_-button">
+                                Preview
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== Certificate 2 ====================-->
+                    <div class="project__content grid swiper-slide">
+                        <img src="/assets/img/data_driven.jpg" alt="" class="project__img">
+
+                        <div class="project__data">
+                            <p>Ask Questions to Make Data-Driven Decisions by Google, Coursera</p>
+                            <a href="/assets/pdf/Mrinmoy_abstract_CSS.pdf"
+                                class="button button--flex button--small project_-button">
+                                Preview
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                   <!--==================== Certificate 3 ====================-->
+                    <div class="project__content grid swiper-slide">
+                        <img src="/assets/img/foundation.jpg" alt="" class="project__img">
+
+                        <div class="project__data">
+                            <p>Foundations: Data, Data, Everywhere by Google, Coursera</p>
+                            <a href="/assets/pdf/Mrinmoy_abstract_CSS.pdf"
+                                class="button button--flex button--small project_-button">
+                                Preview
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                  <!--==================== Certificate 4 ====================-->
+                    <div class="project__content grid swiper-slide">
+                        <img src="/assets/img/exploration.jpg" alt="" class="project__img">
+
+                        <div class="project__data">
+                            <p>Prepare Data for Exploration by Google, Coursera</p>
+                            <a href="/assets/pdf/Mrinmoy_abstract_CSS.pdf"
+                                class="button button--flex button--small project_-button">
+                                Preview
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                  <!--==================== Certificate 5 ====================-->
+                    <div class="project__content grid swiper-slide">
+                        <img src="/assets/img/aws.jpg" alt="" class="project__img">
+
+                        <div class="project__data">
+                            <p>AWS Academy Graduate - AWS Academy Cloud Foundations</p>
+                            <a href="/assets/pdf/Mrinmoy_abstract_CSS.pdf"
+                                class="button button--flex button--small project_-button">
+                                Preview
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+        </section>
+
+        <!--==================== EXPERIENCES ====================-->
+        <section class="experiences section" id="experiences">
+            <h2 class="section__title">Experiences</h2>
+            <span class="section__subtitle">What I have</span>
+
+            <div data-aos="fade-right" class="experiences__container container grid">
+                <!--==================== EXPERIENCES 1 ====================-->
+                <div class="experiences__content">
+                    <div>
+                        <i class="uil uil-web-grid experiences__icon"></i>
+                        <h3 class="experiences__title">Data Scientist<br> @Listening247 (formerly DMR)</h3>
+                        <p class="experiences__subtitle">Remote | Feb 2025 - Present</p>
+                    </div>
+
+                    <span class="button button--flex button--small button--link experiences__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="experiences__modal">
+                        <div class="experiences__modal-content">
+                            <h4 class="experiences__modal-title">Data Scientist<br> @Listening247 (formerly DMR)</h4>
+                            <i class="uil uil-times experiences__modal-close"></i>
+
+                            <ul class="experiences__modal-experiences grid">
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Annotate unlabeled data with AI tool, precision check.</p>
+                                </li>
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Preprocessed and analyzed large text datasets to ensure high-quality input for model training.</p>
+                                </li>
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Sentiment modeling, topic modeling and working with unlabeled data.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== EXPERIENCE 2 ====================-->
+                <div class="experiences__content">
+                    <div>
+                        <i class="uil uil-web-grid experiences__icon"></i>
+                        <h3 class="experiences__title">Data Scientist Intern<br> @Listening247 (formerly DMR)</h3>
+                        <p class="experiences__subtitle">Remote | Jul 2024 - Jan 2025</p>
+                    </div>
+
+                    <span class="button button--flex button--small button--link experiences__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="experiences__modal">
+                        <div class="experiences__modal-content">
+                            <h4 class="experiences__modal-title">Data Scientist Intern<br> @Listening247 (formerly DMR)</h4>
+                            <i class="uil uil-times experiences__modal-close"></i>
+
+                            <ul class="experiences__modal-experiences grid">
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Annotate unlabeled data with AI tool, precision check.</p>
+                                </li>
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Preprocessed and analyzed large text datasets to ensure high-quality input for model training.</p>
+                                </li>
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Sentiment modeling, topic modeling and working with unlabeled data.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== EXPERIENCES 3 ====================-->
+                <div class="experiences__content">
+                    <div>
+                        <i class="uil uil-web-grid experiences__icon"></i>
+                        <h3 class="experiences__title">Machine Learning Engineer Intern<br> @Vast Hive</h3>
+                        <p class="experiences__subtitle">Remote | May 2024 - Oct 2024</p>
+                    </div>
+
+                    <span class="button button--flex button--small button--link experiences__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="experiences__modal">
+                        <div class="experiences__modal-content">
+                            <h4 class="experiences__modal-title">Machine Learning Engineer Intern<br> @Vast Hive</h4>
+                            <i class="uil uil-times experiences__modal-close"></i>
+
+                            <ul class="experiences__modal-experiences grid">
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Developed and optimized NLP Model (Danish to English Machine Translation Model) by utilizing frameworks such as TensorFlow, PyTorch.</p>
+                                </li>
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>PPreprocessed and analyzed large text datasets to ensure high-quality input for model training.</p>
+                                </li>
+                                <li class="experiences__modal-experience">
+                                    <i class="uil uil-check-circle experiences__modal-icon"></i>
+                                    <p>Sentiment modeling, topic modeling and working with unlabeled dataTrain parallel data for machine translation.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+        <!--==================== PROJECT ====================-->
+        <section class="project section" id="project">
+            <h2 class="section__title">Project</h2>
+
+            <div data-aos="fade-right" class="project__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PROJECT 1 ====================-->
+                    <div class="project__content grid swiper-slide">
+                        <img src="/assets/img/project1.jpg" alt="" class="project__img">
+
+                        <div class="project__data">
+                            <h3 class="project__title">RAIOne (Smart Inventory System with Chatbot)</h3>
+                            <p class="project__description">RAIOne is a smart inventory management system built for the Robotics and AI Engineering Department to digitize and streamline lab equipment borrowing and returning. The system features a user-friendly web interface built with React.js and TypeScript, and a robust backend using NestJS, GraphQL, and PostgreSQL.
+                               I was responsible for designing and developing the AI-powered RAIOne Line chatbot using Python and Ollama. I integrated it with the LINE messaging platform to automate user queries, support real-time inventory updates, and handle secure authentication using JWT. The chatbot enhances the overall user experience by offering instant assistance on availability, borrowing policies, and deadlines, reducing admin workload and improving communication efficiency.</p>
+                        </div>
+                    </div>
+                    <!--==================== PROJECT 2 ====================-->
+                    <div class="project__content grid swiper-slide">
+                        <img src="/assets/img/project2.jpg" alt="" class="project__img">
+
+                        <div class="project__data">
+                            <h3 class="project__title">Danish-English Translation Model</h3>
+                            <p class="project__description">This project explores various neural machine translation (NMT) 
+                              approaches for translating Danish text into English. Using different frameworks and models, I experimented with both
+                              Transformer and LSTM architectures to optimize translation accuracy and efficiency. 
+                              While some approaches demonstrated high accuracy, others highlighted challenges in tuning and computational demands.</p>
+                        </div>
+                    </div>
+            
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-project-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-project-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div data-aos="fade-in" class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon "></i>
+                        <!--home__social-->
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle"> saunghninphyu7210@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-linkedin-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">LinkedIn</h3>
+                            <span class="contact__subtitle">https://www.linkedin.com/in/saunghninphyu/ </span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/3291f4338dc27f344cdc564a1df42f85" method="POST"
+                    class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input name="name" type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input name="email" type="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Title</label>
+                        <input name="message" type="text" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input" name="message"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Saung</h1>
+                    <span class="footer__subtitle">Data Scientist</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#experiences" class="footer__link">Experiences</a>
+                    </li>
+                    <li>
+                        <a href="#project" class="footer__link">Project</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/saunghninphyu/"
+                        target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i></a>
+                    </a>
+
+                    <a href="https://github.com/Saung210" target="_blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i></a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <div><a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a></div>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=================== Animated text ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: [
+                "a Data Scientist",
+                "a fresh grad in Bachelor of Robotics and AI Engineering",
+            ],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+
+    <!--=================== Animate scroll js ===============-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 2000
+        });
+    </script>
 
 </body>
+
 </html>
